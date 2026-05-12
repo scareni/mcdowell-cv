@@ -20,99 +20,135 @@
 %% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 %% SOFTWARE.
 
-% The font could be set to Windows-specific Calibri by using the 'calibri' option
 \documentclass[]{mcdowellcv}
 
-% For mathematical symbols
 \usepackage{amsmath}
 
-% Set applicant's personal data for header
-\name{Gayle L. McDowell}
-\address{123 Spruce St, Apt 35 \linebreak Philadelphia PA 19103}
-\contacts{(555) 555-1212 \linebreak gayle@careercup.com}
+\name{Shane Areni}
+\address{Sydney, Australia}
+\contacts{+61-432-419-486 \linebreak shane.areni@mailbox.org \linebreak LinkedIn: shane-areni \linebreak GitHub: scareni}
 
 \begin{document}
 
-	% Print the header
-	\makeheader
-	
-	% Print the content
-	\begin{cvsection}{Employment}
-		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
-			iChat AV			
-			\begin{itemize}
-				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
-				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
-				\item Redesigned chat file format and implemented backwards compatibility for search.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
-			\begin{itemize}
-				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
-				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
-			\begin{itemize}
-				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
-				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
-			\end{itemize}
-		\end{cvsubsection}
-		
-		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
-			Visual Studio Core (Summer 2003)		
-			\begin{itemize}
-				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
-				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
-			\end{itemize}
-			Programmer Productivity Research Center (Summers 2001, 2002)
-			\begin{itemize}
-				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
-				\item Created test case generation tool which creates random XML docs from XML Schema.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Education}
-		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
-			\begin{itemize}
-				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
-				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
-				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
-				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Technical Experience}
-		\begin{cvsubsection}{Projects}{}{}
-			\begin{itemize}
-				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
-				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
-				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Additional Experience and Awards}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
-				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-	\begin{cvsection}{Languages and Technologies}
-		\begin{cvsubsection}{}{}{}	
-			\begin{itemize}
-				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
-				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
-			\end{itemize}
-		\end{cvsubsection}
-	\end{cvsection}
-	
-\end{document}
+\makeheader
 
+\begin{cvsection}{Summary}
+\begin{cvsubsection}{}{}{}
+Honours graduate in Computer Science with practical experience building scalable distributed systems and innovative AI solutions. I’m passionate about distributed systems architecture, algorithm design, and applying cutting-edge technologies like large language models to solve real-world business problems.
+\end{cvsubsection}
+\end{cvsection}
+
+\begin{cvsection}{Employment}
+
+\begin{cvsubsection}{Software Engineer (AI Team)}{Swipejobs}{June 2025 -- Present}
+\begin{itemize}
+\item Designed and developed an AI-powered resume parsing microservice using the Amazon Bedrock Java SDK.
+\item Core product used by hundreds of thousands of users.
+\item Leveraged LLMs to extract and classify structured data from resumes.
+\item Implemented Neo4j vector database reducing parsing time from ~25s to ~7s (72\% reduction).
+\item Built semantic search with vector embeddings.
+\item Refactored system to use Spring AI.
+\item Designed NLP pipeline to extract new skills from resume data.
+\item Generated thousands of skills used by large user base.
+\item Maintained data warehouse using Scala + Apache Spark.
+\item Built dashboards using Apache Superset + Trino.
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Graduate Software Engineer (Back-End)}{Swipejobs}{June 2024 -- May 2025}
+\begin{itemize}
+\item Developed Java 17 + Spring Boot microservices.
+\item Stack: MongoDB, Apache Kafka, AWS SQS, Gradle, JUnit, Mockito, Git.
+\item Optimised queries reducing latency by up to 95\%.
+\item Deployed via GoCD CI/CD.
+\item Debugged using Elasticsearch, Kibana, Kubernetes Dashboard.
+\item Scripted in Python 3.
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Honours Thesis}{University of Sydney}{Aug 2023 -- June 2024}
+\begin{itemize}
+\item Researched geometric spanners under Dr André van Renssen.
+\item Developed routing algorithms for the $\theta_5$-graph.
+\item Built visualisation tool in TypeScript + React.
+\item Achieved First Class Honours.
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Internship Program}{Strong Compute}{Aug 2022 -- Nov 2022}
+\begin{itemize}
+\item Built deep learning segmentation models using Python + PyTorch.
+\item Implemented DeepLab, FCN, MaskRCNN, UNet.
+\item Achieved >95\% IoU accuracy.
+\item Presented results at AI Day conference.
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Intern}{Swipejobs}{July 2022 -- Sept 2023}
+\begin{itemize}
+\item Performed QA testing.
+\item Built email validation microservice (Java + Spring Boot).
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Education}
+
+\begin{cvsubsection}{Sydney, Australia}{University of Sydney}{June 2024}
+\begin{itemize}
+\item B. Advanced Computing (Computer Science)
+\item Honours Class I
+\item Member of Sydney Algorithms and Computing Theory Group (SACT)
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Projects}
+
+\begin{cvsubsection}{Poker Bot}{}{2025 -- Present}
+\begin{itemize}
+\item Implemented CFR algorithm in Rust.
+\item Built backend (C\# + ASP.NET) and frontend (React + TypeScript).
+\item Real-time gameplay system (WIP).
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{2D Isometric Game}{}{2021 -- 2022}
+\begin{itemize}
+\item Built game in C11 using SDL2.
+\item Implemented camera movement, zoom, selection, and rendering logic.
+\item Dynamic tile merging system.
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Skills}
+
+\begin{cvsubsection}{}{}{}
+\begin{itemize}
+\item \textbf{Languages:} Java, Python, JavaScript/TypeScript, C, Scala, C\#, Rust
+\item \textbf{Frameworks:} Spring Boot, PyTorch, React, ASP.NET
+\item \textbf{AI/ML:} NLP, LLMs, embeddings, semantic search, classification pipelines
+\item \textbf{Databases:} MongoDB, Neo4j, PostgreSQL, MySQL, Redis
+\item \textbf{Infrastructure:} Kafka, AWS SQS, Kubernetes, Docker, Jenkins
+\item \textbf{Tools:} Elasticsearch, Kibana, Grafana, Superset, Gradle, Git
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{Additional Experience}
+
+\begin{cvsubsection}{}{}{}
+\begin{itemize}
+\item Completed Swimrun Australia Sydney East 2025 (10km) and Three Bridges half marathon.
+\item Beginner guitarist.
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\end{document}
