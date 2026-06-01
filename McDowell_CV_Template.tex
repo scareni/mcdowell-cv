@@ -26,7 +26,7 @@
 
 \name{Shane Areni}
 \address{Sydney, Australia}
-\contacts{+61-432-419-486 \linebreak shane.areni@mailbox.org \linebreak LinkedIn: shane-areni \linebreak GitHub: scareni}
+\contacts{+61 432 419 486 \linebreak shane.areni@mailbox.org \linebreak LinkedIn: shane-areni \linebreak GitHub: scareni}
 
 \begin{document}
 
@@ -34,44 +34,59 @@
 
 \begin{cvsection}{Summary}
 \begin{cvsubsection}{}{}{}
-Honours graduate in Computer Science with practical experience building scalable distributed systems and innovative AI solutions. I’m passionate about distributed systems architecture, algorithm design, and applying cutting-edge technologies like large language models to solve real-world business problems.
+Software engineer with practical experience building scalable distributed systems and innovative AI solutions.
+I’m passionate about distributed systems architecture, algorithm design, and LLM powered agents to solve real-world business problems.
 \end{cvsubsection}
 \end{cvsection}
 
 \begin{cvsection}{Employment}
 
-\begin{cvsubsection}{Software Engineer (AI Team)}{Swipejobs}{June 2025 -- Present}
+\begin{cvsubsection}{Software Engineer (AI)}{Compare Club}{February 2026 -- Present}
 \begin{itemize}
-\item Designed and developed an AI-powered resume parsing microservice using the Amazon Bedrock Java SDK.
-\item Core product used by hundreds of thousands of users.
-\item Leveraged LLMs to extract and classify structured data from resumes.
-\item Implemented Neo4j vector database reducing parsing time from ~25s to ~7s (72\% reduction).
-\item Built semantic search with vector embeddings.
-\item Refactored system to use Spring AI.
+\item Productionalised a POC chatbot using LangChain/LangGraph.
+    \begin{itemize}
+    \item Inherited a POC chatbot project implemented with ElevenLabs.
+    \item Redesigned and implemented using Python 3 + FastAPI + LangChain/LangGraph.
+    \item Hosted in Azure and powered by Google Gemini.
+    \item Migration to Amazon Bedrock AgentCore platform planned.
+    \end{itemize}
+\item Designed an agent to anaylse and report on production chatbot conversations.
+    \begin{itemize}
+        \item Uses a map-reduce pattern to extract insights from numerous production chabot transcripts.
+        \item Automatically publishes reports to Google Chat, providing non-technical stakeholders with easy access to key information.
+    \end{itemize}
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Software Engineer (AI Team)}{Swipejobs}{June 2025 -- February 2026}
+\begin{itemize}
+\item Designed and implemented an LLM powered resume parsing microservice using Amazon Bedrock.
+    \begin{itemize}
+    \item Core product used by hundreds of thousands of users.
+    \item Leveraged LLMs to extract and classify structured data from resumes.
+    \item Implemented Neo4j vector database reducing parsing time from \textasciitilde25s to \textasciitilde7s (72\% reduction).
+    \item Built semantic search with vector embeddings.
+    % \item Refactored system to use Spring AI for maintainability.
+    \end{itemize}
 \item Designed NLP pipeline to extract new skills from resume data.
-\item Generated thousands of skills used by large user base.
-\item Maintained data warehouse using Scala + Apache Spark.
-\item Built dashboards using Apache Superset + Trino.
+    \begin{itemize}
+    \item Generated thousands of skills used to enrich user profiles.
+    \item Leveraged the DBSCAN clustering algorithm to collapse similar skill strings.
+    \end{itemize}
+% \item Maintained data warehouse using Scala + Apache Spark.
+% \item Built dashboards using Apache Superset + Trino.
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsubsection}{Graduate Software Engineer (Back-End)}{Swipejobs}{June 2024 -- May 2025}
+    \medskip
 \begin{itemize}
 \item Developed Java 17 + Spring Boot microservices.
 \item Stack: MongoDB, Apache Kafka, AWS SQS, Gradle, JUnit, Mockito, Git.
-\item Optimised queries reducing latency by up to 95\%.
-\item Deployed via GoCD CI/CD.
+\item Optimised database queries reducing latency by up to 95\%.
+\item Deployed code changes via GoCD for distributed CI/CD.
 \item Debugged using Elasticsearch, Kibana, Kubernetes Dashboard.
 \item Scripted in Python 3.
-\end{itemize}
-\end{cvsubsection}
-
-\begin{cvsubsection}{Honours Thesis}{University of Sydney}{Aug 2023 -- June 2024}
-\begin{itemize}
-\item Researched geometric spanners under Dr André van Renssen.
-\item Developed routing algorithms for the $\theta_5$-graph.
-\item Built visualisation tool in TypeScript + React.
-\item Achieved First Class Honours.
 \end{itemize}
 \end{cvsubsection}
 
@@ -80,26 +95,37 @@ Honours graduate in Computer Science with practical experience building scalable
 \item Built deep learning segmentation models using Python + PyTorch.
 \item Implemented DeepLab, FCN, MaskRCNN, UNet.
 \item Achieved >95\% IoU accuracy.
-\item Presented results at AI Day conference.
+\item Presented results at the Strong Compute AI Day 2022 conference.
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsubsection}{Intern}{Swipejobs}{July 2022 -- Sept 2023}
 \begin{itemize}
 \item Performed QA testing.
-\item Built email validation microservice (Java + Spring Boot).
+\item Built email validation microservice (Java 17 + Spring Boot).
 \end{itemize}
 \end{cvsubsection}
 
 \end{cvsection}
 
+\newpage
+
 \begin{cvsection}{Education}
 
-\begin{cvsubsection}{Sydney, Australia}{University of Sydney}{June 2024}
+\begin{cvsubsection}{B. Advanced Computing}{University of Sydney}{June 2024}
 \begin{itemize}
-\item B. Advanced Computing (Computer Science)
+\item Major in computer science, minor in philosohpy
 \item Honours Class I
 \item Member of Sydney Algorithms and Computing Theory Group (SACT)
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Honours Thesis}{University of Sydney}{Aug 2023 -- June 2024}
+\begin{itemize}
+\item Researched geometric spanners under Dr André van Renssen.
+\item Developed routing algorithms for the $\theta_5$-graph.
+\item Built visualisation tool in TypeScript + React.
+% \item Achieved first class honours.
 \end{itemize}
 \end{cvsubsection}
 
@@ -109,15 +135,17 @@ Honours graduate in Computer Science with practical experience building scalable
 
 \begin{cvsubsection}{Poker Bot}{}{2025 -- Present}
 \begin{itemize}
-\item Implemented CFR algorithm in Rust.
-\item Built backend (C\# + ASP.NET) and frontend (React + TypeScript).
-\item Real-time gameplay system (WIP).
+\item Implemented a proof-of-concept CFR algorithm in Python.
+\item Reimplemented CFR algorithm in Rust for improved performance.
+\item Profiled Rust binary using perf + flamegraph to analyse bottlenecks.
+% \item Built backend (C\# + ASP.NET) and frontend (React + TypeScript).
+% \item Real-time gameplay system (WIP).
 \end{itemize}
 \end{cvsubsection}
 
 \begin{cvsubsection}{2D Isometric Game}{}{2021 -- 2022}
 \begin{itemize}
-\item Built game in C11 using SDL2.
+\item Built a sprite-based game in C11 using SDL2.
 \item Implemented camera movement, zoom, selection, and rendering logic.
 \item Dynamic tile merging system.
 \end{itemize}
@@ -129,23 +157,43 @@ Honours graduate in Computer Science with practical experience building scalable
 
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
-\item \textbf{Languages:} Java, Python, JavaScript/TypeScript, C, Scala, C\#, Rust
-\item \textbf{Frameworks:} Spring Boot, PyTorch, React, ASP.NET
-\item \textbf{AI/ML:} NLP, LLMs, embeddings, semantic search, classification pipelines
-\item \textbf{Databases:} MongoDB, Neo4j, PostgreSQL, MySQL, Redis
-\item \textbf{Infrastructure:} Kafka, AWS SQS, Kubernetes, Docker, Jenkins
-\item \textbf{Tools:} Elasticsearch, Kibana, Grafana, Superset, Gradle, Git
+\item \textbf{Languages:} Java, Python, JavaScript/TypeScript, C, Scala, Rust
+\item \textbf{Frameworks:} Spring Boot, PyTorch, LangChain, LangGraph, React
+\item \textbf{AI/ML:} LLMs, NLP, embeddings, semantic search, classification pipelines
+\item \textbf{Databases:} MongoDB, Neo4j, PostgreSQL, Redis
+\item \textbf{Infrastructure:} AWS, Docker, Kafka, Kubernetes
+\item \textbf{Tools:} Git, Gradle, Elasticsearch, Kibana, Grafana, Superset, Sentry, Perf, Flamegraph
 \end{itemize}
 \end{cvsubsection}
 
 \end{cvsection}
 
-\begin{cvsection}{Additional Experience}
+\begin{cvsection}{Hobbies}
 
 \begin{cvsubsection}{}{}{}
 \begin{itemize}
-\item Completed Swimrun Australia Sydney East 2025 (10km) and Three Bridges half marathon.
+\item Completed Swimrun Australia Sydney East 2025 (10km) and Three Bridges half marathon 2025.
 \item Beginner guitarist.
+\end{itemize}
+\end{cvsubsection}
+
+\end{cvsection}
+
+\begin{cvsection}{References}
+
+\begin{cvsubsection}{Philip Senger}{}{}
+\begin{itemize}
+\item Principle Engineer, Compare Club
+\item \textit{Relationship:} Direct manager
+\item Contact available upon request
+\end{itemize}
+\end{cvsubsection}
+
+\begin{cvsubsection}{Mark Stein}{}{}
+\begin{itemize}
+\item AI Engineering Lead, Swipejobs
+\item \textit{Relationship:} Direct manager
+\item Contact available upon request
 \end{itemize}
 \end{cvsubsection}
 
